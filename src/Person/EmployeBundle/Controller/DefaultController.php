@@ -6,8 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction()
+    public function indexAction($message)
     {
-        return $this->render('PersonEmployeBundle:Default:index.html.twig');
+        $message="hello";
+        return $this->render('PersonEmployeBundle:Default:index.html.twig',$message);
     }
 }
