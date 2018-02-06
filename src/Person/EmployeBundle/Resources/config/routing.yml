@@ -1,0 +1,3 @@
+person_employe_homepage:
+    path:     /
+    defaults: { _controller: PersonEmployeBundle:Default:index }

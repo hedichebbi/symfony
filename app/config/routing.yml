@@ -1,0 +1,7 @@
+person_employe:
+    resource: "@PersonEmployeBundle/Resources/config/routing.yml"
+    prefix:   /person
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
