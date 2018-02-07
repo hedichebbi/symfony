@@ -1,3 +1,13 @@
 person_employe_homepage:
     path:     /{id},{name}
     defaults: { _controller: PersonEmployeBundle:Default:index }
+person_employe_todo:
+    path:     /todo
+    defaults: { _controller: PersonEmployeBundle:ToDo:index }
+person_employe_add_todo:
+    path:     /todo/add/{cle}/{valeur}
+    defaults: { _controller: PersonEmployeBundle:ToDo:add }
+
+person_employe_delete_todo:
+    path:     /todo/delete/{cle}
+    defaults: { _controller: PersonEmployeBundle:ToDo:delete }
