@@ -11,3 +11,7 @@ person_employe_add_todo:
 person_employe_delete_todo:
     path:     /todo/delete/{cle}
     defaults: { _controller: PersonEmployeBundle:ToDo:delete }
+
+add:
+    path:     /add
+    defaults: { _controller: PersonEmployeBundle:test:add }
