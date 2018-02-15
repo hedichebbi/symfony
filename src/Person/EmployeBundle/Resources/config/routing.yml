@@ -15,3 +15,13 @@ person_employe_delete_todo:
 add:
     path:     /add
     defaults: { _controller: PersonEmployeBundle:test:add }
+
+person_employe_list:
+    path:     /persons
+    defaults: { _controller: PersonEmployeBundle:Person:list }
+
+
+person_employe_add:
+    path:     /persons/add/{nom}/{prenom}/{age}/{path}
+    defaults: { _controller: PersonEmployeBundle:Person:Add }
+
